@@ -1,0 +1,13 @@
+node_modules
+.idea
+.vs
+Cooked
+Crashes
+Logs
+**/Binaries/
+**/Build/
+**/DerivedDataCache/
+**/Intermediate/
+**/Saved/
+Plugins/Puerts/ThirdParty/v8_11.8.172
+Plugins/Puerts/ThirdParty/v8_10.6.194
