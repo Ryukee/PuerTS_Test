@@ -8,12 +8,15 @@ void UTsGameInstance::Init()
 void UTsGameInstance::OnStart()
 {
     Super::OnStart();
-    // ĞéÄâ»úÄ¬ÈÏ¼ÓÔØJavaScriptÎÄ¼şµÄ¸ùÄ¿Â¼ÊÇContent/JavaScript, ¸ÃÄ¿Â¼¿ÉÒÔÔÚFJsEnv¹¹Ôìº¯ÊıÖ¸¶¨
+    
+    // è™šæ‹Ÿæœºé»˜è®¤åŠ è½½JavaScriptæ–‡ä»¶çš„æ ¹ç›®å½•æ˜¯Content/JavaScript, è¯¥ç›®å½•å¯ä»¥åœ¨FJsEnvæ„é€ å‡½æ•°æŒ‡å®š
     // GameScript = MakeShared<puerts::FJsEnv>(std::make_unique<puerts::DefaultJSModuleLoader>(TEXT("JavaScript")), std::make_shared<puerts::FDefaultLogger>(), 8080);
-
     GameScript = MakeShared<puerts::FJsEnv>();
+
+    // ä¼ å…¥å‚æ•°
     TArray<TPair<FString, UObject*>> Arguments;
     Arguments.Add(TPair<FString, UObject*>(TEXT("GameInstance"), this));
+    
     GameScript->Start("QuickStart", Arguments);
 }
 

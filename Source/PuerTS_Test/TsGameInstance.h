@@ -7,7 +7,7 @@
 #include "TsGameInstance.generated.h"
 
 UCLASS()
-class PUERTS_UNREAL_DEMO_API UTsGameInstance : public UGameInstance
+class PUERTS_TEST_API UTsGameInstance : public UGameInstance
 {
     GENERATED_BODY()
 
