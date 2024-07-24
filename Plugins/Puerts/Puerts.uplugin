@@ -17,13 +17,13 @@
       "Name": "WasmCore",
       "Type": "Runtime",
       "LoadingPhase": "PreDefault",
-      "WhitelistPlatforms": [ "Win64", "Android", "Mac", "IOS", "Linux" ]
+      "WhitelistPlatforms": [ "Win64", "Android", "Mac", "IOS", "Linux", "OpenHarmony" ]
     },
     {
       "Name": "JsEnv",
       "Type": "Runtime",
       "LoadingPhase": "PreDefault",
-      "WhitelistPlatforms": [ "Win64", "Android", "Mac", "IOS", "Linux" ]
+      "WhitelistPlatforms": [ "Win64", "Android", "Mac", "IOS", "Linux", "OpenHarmony" ]
     },
     {
       "Name": "DeclarationGenerator",
@@ -39,7 +39,7 @@
       "Name": "Puerts",
       "Type": "Runtime",
       "LoadingPhase": "PostEngineInit",
-      "WhitelistPlatforms": [ "Win64", "Android", "Mac", "IOS", "Linux" ]
+      "WhitelistPlatforms": [ "Win64", "Android", "Mac", "IOS", "Linux", "OpenHarmony" ]
     },
     {
       "Name": "PuertsEditor",

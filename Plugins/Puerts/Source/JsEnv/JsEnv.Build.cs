@@ -11,7 +11,7 @@ using System.IO;
 using System.Reflection;
 
 public class JsEnv : ModuleRules
-{
+{    
     enum SupportedV8Versions
     {
         VDeprecated, // for 4.24 or blow only
@@ -54,7 +54,7 @@ public class JsEnv : ModuleRules
     public JsEnv(ReadOnlyTargetRules Target) : base(Target)
     {
         CppStandard = CppStandardVersion.Cpp17;
-
+        
         PublicDefinitions.Add("USING_IN_UNREAL_ENGINE");
         //PublicDefinitions.Add("WITH_V8_FAST_CALL");
         
@@ -431,11 +431,13 @@ public class JsEnv : ModuleRules
             V8LibraryPath = Path.Combine(LibraryPath, "Android", "arm64-v8a");
             PublicAdditionalLibraries.Add(Path.Combine(V8LibraryPath, "libwee8.a"));
         }
+        // --------
         else if (Target.Platform == UnrealTargetPlatform.OpenHarmony)
         {
             string V8LibraryPath = Path.Combine(LibraryPath, "OHOS", "arm64-v8a");
             PublicAdditionalLibraries.Add(Path.Combine(V8LibraryPath, "libwee8.a"));
         }
+        // --------
         else if (Target.Platform == UnrealTargetPlatform.Mac)
         {
             //PublicFrameworks.AddRange(new string[] { "WebKit",  "JavaScriptCore" });
