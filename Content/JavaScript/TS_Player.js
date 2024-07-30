@@ -21,7 +21,9 @@ class TS_Player extends UE.Character {
     // }
     MoveForward(axisValue) {
         this.AddMovementInput(this.GetActorForwardVector(), axisValue, false);
-        UE.KismetSystemLibrary.PrintString(null, "Move: " + axisValue, true, true, new UE.LinearColor(0.0, 0.66, 1.0, 1.0), 2.0);
+        if (axisValue <= -0.1 || axisValue >= 0.1) {
+            UE.KismetSystemLibrary.PrintString(null, "Move: " + axisValue, true, true, new UE.LinearColor(0.0, 0.66, 1.0, 1.0), 1.0);
+        }
     }
 }
 __decorate([

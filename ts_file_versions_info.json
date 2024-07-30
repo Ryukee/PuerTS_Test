@@ -5,7 +5,7 @@
         "isBP": false
     },
     "D:/puerts/PuerTS_Test/TypeScript/TS_Player.ts": {
-        "version": "383ba9ef9b0778afb74109924511bc08",
+        "version": "82223eea2481e3513ad5c216c5959d6d",
         "processed": true,
         "isBP": true
     },
@@ -31,8 +31,7 @@
     },
     "D:/puerts/PuerTS_Test/Typing/ue/ue.d.ts": {
         "version": "7e48e861a88fbb9062f801ff88d43beb",
-        "processed": true,
-        "isBP": false
+        "processed": false
     },
     "D:/puerts/PuerTS_Test/Typing/ue/ue_s.d.ts": {
         "version": "18378c928d13e422f507a932b77ae6e6",
@@ -44,8 +43,7 @@
     },
     "D:/puerts/PuerTS_Test/Typing/ue/ue_bp.d.ts": {
         "version": "abb5d7a3b2416a797803139d624e30f0",
-        "processed": true,
-        "isBP": false
+        "processed": false
     },
     "D:/puerts/PuerTS_Test/Content/JavaScript/PuertsEditor/node_modules/typescript/lib/lib.esnext.full.d.ts": {
         "version": "640887e9cf03e5b23f982d1aacbe65b5",

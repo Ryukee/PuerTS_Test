@@ -9,6 +9,6 @@ Logs
 **/DerivedDataCache/
 **/Intermediate/
 **/Saved/
-Plugins/Puerts/ThirdParty/v8_11.8.172
-Plugins/Puerts/ThirdParty/v8_10.6.194
+Plugins/Puerts/ThirdParty/v8_11.8.172/Lib
+Plugins/Puerts/ThirdParty/v8_10.6.194/Lib
 PuerTS_Test.uproject
